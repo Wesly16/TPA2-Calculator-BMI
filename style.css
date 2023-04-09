@@ -1,0 +1,131 @@
+:root {
+  --text-color: #333333;
+  --primary-color: #333333;
+  --secondary-color: #6558f5;
+  --background-color: #86a3ce;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+.weight-medium {
+  font-weight: 600;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+main {
+  background-color: #86a3ce;
+  margin: 50px 50px;
+  -o-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+
+h1.title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+.form-group {
+  width: 100%;
+  margin: 20px 0px;
+  padding: 15px;
+}
+input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 15px;
+  border: 1px solid #000000;
+}
+
+input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+button {
+  background-color: var(--secondary-color);
+  padding: 15px;
+  color: #fafafa;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 0;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #382cbd;
+  transition: 0.8s;
+}
+
+p {
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+/* Breakpoint Media Query */
+@media screen and (max-width: 850px) {
+  h1 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 18px;
+  }
+  main {
+    width: 60%;
+  }
+
+  input,
+  label {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  main {
+    width: 80%;
+  }
+  h1 {
+    font-size: 25px;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s;
+}
+/* Keyframes Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
