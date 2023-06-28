@@ -2,9 +2,8 @@
   --text-color: #333333;
   --primary-color: #333333;
   --secondary-color: #6558f5;
-  --background-color: #86a3ce;
+  --background-color: #ffffff;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -20,23 +19,20 @@
 }
 
 body {
-  background-color: whitesmoke;
+  padding-top: 25px;
+  background: rgb(163, 71, 156);
+  background: linear-gradient(95deg, rgba(163, 71, 156, 1) 23%, rgba(49, 91, 150, 1) 100%);
 }
 
 main {
-  background-color: #86a3ce;
-  margin: 50px 50px;
-  -o-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  border-radius: 10px;
+  width: 45%;
+  margin: 50px auto 0;
 }
 
 h1.title {
   text-align: center;
   margin-bottom: 30px;
-  color: var(--text-color);
+  color: var(--background-color);
 }
 
 label {
@@ -44,20 +40,23 @@ label {
   margin: 10px 0;
   font-weight: 600;
   font-size: 20px;
-  color: var(--text-color);
+  color: var(--background-color);
 }
 
 .form-group {
   width: 100%;
-  margin: 20px 0px;
-  padding: 15px;
+  margin: 30px 5px;
+  gap: 10px;
 }
+
 input {
   width: 100%;
-  padding: 10px 12px;
-  font-size: 16px;
-  border-radius: 15px;
-  border: 1px solid #000000;
+  padding: 15px 13px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid #333333;
+  background-color: whitesmoke;
 }
 
 input:focus {
@@ -65,16 +64,16 @@ input:focus {
 }
 
 button {
+  justify-content: center;
   background-color: var(--secondary-color);
   padding: 15px;
   color: #fafafa;
   font-size: 18px;
   border-radius: 8px;
-  border: 0;
   font-weight: 700;
   cursor: pointer;
+  gap: 50px;
 }
-
 button:hover {
   background-color: #382cbd;
   transition: 0.8s;
@@ -82,7 +81,7 @@ button:hover {
 
 p {
   font-size: 18px;
-  color: var(--text-color);
+  color: var(--background-color);
 }
 
 /* Breakpoint Media Query */
